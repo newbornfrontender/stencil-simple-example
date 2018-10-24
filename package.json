@@ -1,7 +1,7 @@
 {
-  "name": "my-component",
+  "name": "stencil-simple-example",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Простой проект на Stencil",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/newbornfrontender/stencil-simple-example.git"
   },
-  "author": "Ionic Team",
+  "author": "Infant Frontender",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/newbornfrontender/stencil-simple-example/issues"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/newbornfrontender/stencil-simple-example"
 }
