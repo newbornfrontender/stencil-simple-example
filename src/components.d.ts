@@ -12,6 +12,9 @@ import '@stencil/core';
 
 export namespace Components {
 
+  interface MyButton {}
+  interface MyButtonAttributes extends StencilHTMLAttributes {}
+
   interface MyComponent {
     'first': string;
     'last': string;
@@ -22,17 +25,34 @@ export namespace Components {
     'last'?: string;
     'middle'?: string;
   }
+
+  interface MyFirstComponent {
+    'msg': string;
+  }
+  interface MyFirstComponentAttributes extends StencilHTMLAttributes {
+    'msg'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
+    'MyButton': Components.MyButton;
     'MyComponent': Components.MyComponent;
+    'MyFirstComponent': Components.MyFirstComponent;
   }
 
   interface StencilIntrinsicElements {
+    'my-button': Components.MyButtonAttributes;
     'my-component': Components.MyComponentAttributes;
+    'my-first-component': Components.MyFirstComponentAttributes;
   }
 
+
+  interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {}
+  var HTMLMyButtonElement: {
+    prototype: HTMLMyButtonElement;
+    new (): HTMLMyButtonElement;
+  };
 
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
@@ -40,12 +60,22 @@ declare global {
     new (): HTMLMyComponentElement;
   };
 
+  interface HTMLMyFirstComponentElement extends Components.MyFirstComponent, HTMLStencilElement {}
+  var HTMLMyFirstComponentElement: {
+    prototype: HTMLMyFirstComponentElement;
+    new (): HTMLMyFirstComponentElement;
+  };
+
   interface HTMLElementTagNameMap {
+    'my-button': HTMLMyButtonElement
     'my-component': HTMLMyComponentElement
+    'my-first-component': HTMLMyFirstComponentElement
   }
 
   interface ElementTagNameMap {
+    'my-button': HTMLMyButtonElement;
     'my-component': HTMLMyComponentElement;
+    'my-first-component': HTMLMyFirstComponentElement;
   }
 
 
