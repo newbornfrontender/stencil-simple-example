@@ -19,3 +19,16 @@
     app           Minimal starter for building a Stencil app or website
   ❯ component     Collection of web components that can be used anywhere
 ```
+
+<h2 align="center">Команды</h2>
+
+```bash
+  npm run build - Команда для сборки проекта с миницикацией кода
+  npm run start - Команда для запуска сервера разработки
+  npm run test - Команда для запуска unit и e2e тестов
+  npm run test.watch - Команда для запуска тестов в фоновом режиме
+```
+
+<h2 align="center">Лицензия</h2>
+
+[MIT](/LICENSE)
