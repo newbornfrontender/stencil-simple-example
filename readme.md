@@ -23,10 +23,10 @@
 <h2 align="center">Команды</h2>
 
 ```bash
-  npm run build - Команда для сборки проекта с миницикацией кода
-  npm run start - Команда для запуска сервера разработки
-  npm run test - Команда для запуска unit и e2e тестов
-  npm run test.watch - Команда для запуска тестов в фоновом режиме
+  npm run build - сборка проекта с миницикацией кода
+  npm run start - запуск сервера разработки
+  npm run test - запуск unit и e2e тестов
+  npm run test.watch - запуск тестов в фоновом режиме
 ```
 
 <h2 align="center">Лицензия</h2>
